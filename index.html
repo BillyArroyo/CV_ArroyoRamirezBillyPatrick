@@ -55,7 +55,6 @@
             mix-blend-mode: difference;
         }
 
-        /* Particles Background */
         #particles {
             position: fixed;
             top: 0;
@@ -65,7 +64,6 @@
             z-index: 1;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -221,7 +219,6 @@
             }
         }
 
-        /* Floating Elements */
         .floating {
             position: absolute;
             animation: float 6s ease-in-out infinite;
@@ -340,7 +337,6 @@
             margin-top: 10px;
         }
 
-        /* Skills Section */
         .skills-container {
             max-width: 1400px;
             margin: 0 auto;
@@ -417,7 +413,6 @@
             transform: scale(1.05);
         }
 
-        /* Experience Timeline */
         .timeline {
             max-width: 1000px;
             margin: 0 auto;
@@ -509,7 +504,6 @@
             font-size: 0.85em;
         }
 
-        /* Projects Section */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -593,7 +587,6 @@
             margin-bottom: 20px;
         }
 
-        /* Contact Section */
         .contact-container {
             max-width: 800px;
             margin: 0 auto;
@@ -635,7 +628,6 @@
             margin-bottom: 10px;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 40px 5%;
@@ -645,7 +637,6 @@
             z-index: 2;
         }
 
-        /* Scroll Indicator */
         .scroll-indicator {
             position: fixed;
             top: 0;
@@ -656,7 +647,6 @@
             transition: width 0.1s;
         }
 
-        /* Responsive */
         @media (max-width: 1024px) {
             .hero h1 { font-size: 3.5em; }
             .typing-text { font-size: 1.5em; }
@@ -681,7 +671,6 @@
     <div class="scroll-indicator" id="scrollIndicator"></div>
     <canvas id="particles"></canvas>
 
-    <!-- Navigation -->
     <nav>
         <div class="logo">BA</div>
         <ul class="nav-links">
@@ -694,7 +683,6 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="floating shape-1"></div>
         <div class="floating shape-2"></div>
@@ -711,7 +699,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <h2 class="section-title">Sobre Mí</h2>
         <div class="about-container">
@@ -741,7 +728,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <h2 class="section-title">Habilidades & Tecnologías</h2>
         <div class="skills-container">
@@ -815,7 +801,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <h2 class="section-title">Experiencia Profesional</h2>
         <div class="timeline">
@@ -845,7 +830,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2 class="section-title">Proyectos Destacados</h2>
         <div class="projects-grid">
@@ -912,7 +896,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2 class="section-title">Contáctame</h2>
         <div class="contact-container">
@@ -942,14 +925,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Billy Patrick Arroyo Ramírez. Diseñado con 💜 y código limpio.</p>
         <p style="margin-top: 10px; opacity: 0.6;">Full Stack Developer | Huancayo, Perú</p>
     </footer>
 
     <script>
-        // Custom Cursor
         const cursor = document.querySelector('.cursor');
         const cursorFollower = document.querySelector('.cursor-follower');
         
@@ -963,7 +944,6 @@
             }, 100);
         });
 
-        // Typing Effect
         const typingText = document.getElementById('typingText');
         const texts = [
             'Full Stack Desarrollador',
@@ -998,7 +978,6 @@
 
         type();
 
-        // Particles
         const canvas = document.getElementById('particles');
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
@@ -1049,7 +1028,6 @@
                 particle.draw();
             });
 
-            // Connect particles
             particles.forEach((a, i) => {
                 particles.slice(i + 1).forEach(b => {
                     const dx = a.x - b.x;
@@ -1078,7 +1056,6 @@
             canvas.height = window.innerHeight;
         });
 
-        // Scroll Indicator
         window.addEventListener('scroll', () => {
             const scrollTop = window.pageYOffset;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -1086,7 +1063,6 @@
             document.getElementById('scrollIndicator').style.width = scrollPercent + '%';
         });
 
-        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1097,7 +1073,6 @@
             });
         });
 
-        // Animate on Scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
