@@ -1,0 +1,8 @@
+# Carpeta docs/
+# Coloca aquí tu CV en PDF con el nombre: CV_BillyArroyo.pdf
+#
+# El botón "CV" en el navbar descargará automáticamente:
+#   docs/CV_BillyArroyo.pdf
+#
+# También puedes convertir el archivo .docx a PDF desde Word:
+#   Archivo → Guardar como → PDF

@@ -1,0 +1,96 @@
+/* ================================================
+   BASE — global element styles
+   ================================================ */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+.mono { font-family: var(--font-mono); }
+
+/* ── Custom Cursor ── */
+.cursor {
+  width: 10px;
+  height: 10px;
+  background: var(--clr-primary);
+  border-radius: var(--r-full);
+  position: fixed;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  transition: width var(--t-fast), height var(--t-fast), background var(--t-fast);
+  will-change: transform;
+}
+
+.cursor.is-hovering {
+  width: 20px;
+  height: 20px;
+  background: var(--clr-secondary);
+}
+
+.cursor-follower {
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid rgba(0, 245, 255, 0.35);
+  border-radius: var(--r-full);
+  position: fixed;
+  pointer-events: none;
+  z-index: calc(var(--z-cursor) - 1);
+  transform: translate(-50%, -50%);
+  transition: left 0.12s ease, top 0.12s ease, opacity var(--t-base);
+  will-change: left, top;
+}
+
+/* ── Scroll Progress ── */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--grad-primary);
+  z-index: var(--z-cursor);
+  transition: width 0.1s linear;
+}
+
+/* ── Particle Canvas ── */
+.particle-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-below);
+  pointer-events: none;
+}
+
+/* ── Glass Card ── */
+.glass-card {
+  background: var(--clr-surface);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-lg);
+  transition: border-color var(--t-base), box-shadow var(--t-base), transform var(--t-base);
+}
+
+.glass-card:hover {
+  border-color: var(--clr-border-act);
+  box-shadow: var(--glow);
+}
+
+/* ── Reveal animation (triggered by ScrollObserver) ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity var(--t-slow), transform var(--t-slow);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

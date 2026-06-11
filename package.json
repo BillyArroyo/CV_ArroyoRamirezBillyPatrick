@@ -1,0 +1,15 @@
+{
+  "name": "billy-arroyo-portfolio",
+  "version": "2.0.0",
+  "description": "Professional portfolio — Billy Patrick Arroyo Ramírez, Full Stack Developer",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "api": "cd api && npm start",
+    "api:dev": "cd api && npm run dev",
+    "api:install": "cd api && npm install"
+  },
+  "keywords": ["portfolio", "flutter", "react", "dotnet", "fullstack"],
+  "author": "Billy Patrick Arroyo Ramírez <onichichi.25@outlook.com>",
+  "license": "MIT"
+}

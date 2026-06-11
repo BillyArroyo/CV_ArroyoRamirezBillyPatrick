@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://billyarroyo.github.io/CV_ArroyoRamirezBillyPatrick/sitemap.xml
