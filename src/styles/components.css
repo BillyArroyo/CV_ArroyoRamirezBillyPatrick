@@ -539,6 +539,11 @@
   margin-bottom: var(--sp-3);
 }
 
+.timeline-badge--current {
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.4);
+}
+
 .timeline-card h3 {
   font-size: var(--fs-xl);
   font-weight: var(--fw-bold);

@@ -213,6 +213,17 @@
 
 .avatar__letters { z-index: 1; }
 
+.avatar__photo {
+  position: absolute;
+  inset: 3px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border-radius: var(--r-full);
+  object-fit: cover;
+  object-position: center top;
+  z-index: 1;
+}
+
 .avatar__status {
   position: absolute;
   bottom: 4px;
