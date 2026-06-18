@@ -220,7 +220,7 @@
   height: calc(100% - 6px);
   border-radius: var(--r-full);
   object-fit: cover;
-  object-position: center top;
+  object-position: center 15%;
   z-index: 1;
 }
 
