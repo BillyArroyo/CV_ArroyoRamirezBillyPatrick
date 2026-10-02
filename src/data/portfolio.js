@@ -16,7 +16,7 @@ export const developer = new Developer({
   phone:    '+51 912 262 457',
   github:   'https://github.com/BillyArroyo',
   available: true,
-  bio: `Desarrollador Full Stack con experiencia real en producción. Construí desde cero la app B2B de FerreBoom (Google Play), desarrollé 33+ Cloud Functions en TypeScript para XULS Tech y fundé CP-Techs, mi agencia web. Stack principal: Flutter, React, Next.js, TypeScript, Firebase y Supabase. Inglés C1.`,
+  bio: `Desarrollador Full Stack con experiencia real en producción. Actualmente en InClub desarrollo la app móvil en Flutter y microservicios en Java Spring Boot. En XULS Tech construí el backend de FerreBoom, que hoy supera las 80 Cloud Functions en TypeScript, e inicié la integración con ERPs externos. Stack principal: Flutter, Java Spring Boot, TypeScript, Angular, React, Firebase y Supabase. Inglés C1.`,
   typingRoles: [
     'Full Stack Developer',
     'Flutter & Dart Expert',
@@ -145,9 +145,9 @@ export const experience = [
     type:           'work',
     employmentType: 'Contrato',
     location:       'Huancayo, Perú',
-    description:    'Migré la lógica de negocio de Firestore al backend serverless: 33+ Cloud Functions en TypeScript con validación Zod, Firebase Admin SDK y deploy gen1/gen2.',
+    description:    'Migré la lógica de negocio de Firestore al backend serverless: 80+ Cloud Functions en TypeScript con validación Zod, Firebase Admin SDK y deploy gen1/gen2.',
     responsibilities: [
-      '33+ funciones HTTP TypeScript con validación Zod y Firebase Admin SDK',
+      '80+ funciones TypeScript con validación Zod y Firebase Admin SDK',
       'Flujo completo de crédito y cobranza: solicitud, aprobación/rechazo, validación de comprobantes con Storage',
       '9 endpoints HTTP para gestión de clientes: aprobación, reasignación masiva y línea de crédito',
       'Módulo de pedidos: 3 métodos de pago (YAPE, PLIN, transferencia) + notificaciones a 4 roles',
