@@ -24,8 +24,7 @@ export const developer = new Developer({
     'Mobile App Developer',
     'Backend Serverless Dev',
     'React / Next.js Dev',
-    'Full Stack Developer @ InClub',
-    'Java · Spring Boot · Angular',
+    'Java · Spring Boot',
   ],
 });
 
@@ -42,7 +41,6 @@ export const skillGroups = [
       new Skill({ name: 'Python',         level: 70, highlight: false, category: 'language' }),
       new Skill({ name: 'SQL',            level: 75, highlight: false, category: 'language' }),
       new Skill({ name: 'HTML / CSS',     level: 85, highlight: false, category: 'language' }),
-      new Skill({ name: 'Java',           level: 70, highlight: false, category: 'language' }),
     ],
   }),
   new SkillGroup({
@@ -56,10 +54,6 @@ export const skillGroups = [
       new Skill({ name: 'Melos Monorepo',       level: 78, highlight: false, category: 'mobile' }),
       new Skill({ name: 'FCM',                  level: 80, highlight: false, category: 'mobile' }),
       new Skill({ name: 'Google Play',          level: 75, highlight: false, category: 'mobile' }),
-      new Skill({ name: 'iOS · TestFlight',     level: 72, highlight: false, category: 'mobile' }),
-      new Skill({ name: 'Cubit · Clean Arch',   level: 82, highlight: false, category: 'mobile' }),
-      new Skill({ name: 'Shorebird',            level: 78, highlight: false, category: 'mobile' }),
-      new Skill({ name: 'Sentry',               level: 75, highlight: false, category: 'mobile' }),
     ],
   }),
   new SkillGroup({
@@ -72,7 +66,6 @@ export const skillGroups = [
       new Skill({ name: 'Zustand',        level: 80, highlight: false, category: 'framework' }),
       new Skill({ name: 'Vite',           level: 78, highlight: false, category: 'framework' }),
       new Skill({ name: 'Node.js',        level: 72, highlight: false, category: 'framework' }),
-      new Skill({ name: 'Angular',        level: 68, highlight: false, category: 'framework' }),
     ],
   }),
   new SkillGroup({
@@ -85,11 +78,6 @@ export const skillGroups = [
       new Skill({ name: 'Zod',                  level: 80, highlight: false, category: 'backend' }),
       new Skill({ name: 'Firebase Admin SDK',   level: 85, highlight: false, category: 'backend' }),
       new Skill({ name: 'Dexie.js / IndexedDB', level: 72, highlight: false, category: 'backend' }),
-      new Skill({ name: 'Java Spring Boot',     level: 70, highlight: false, category: 'backend' }),
-      new Skill({ name: 'Microservicios',       level: 72, highlight: false, category: 'backend' }),
-      new Skill({ name: 'OpenAPI / Swagger',    level: 80, highlight: false, category: 'backend' }),
-      new Skill({ name: 'Integración ERP',      level: 75, highlight: false, category: 'backend' }),
-      new Skill({ name: 'Arquitectura Hexagonal', level: 72, highlight: false, category: 'backend' }),
     ],
   }),
   new SkillGroup({
@@ -101,8 +89,6 @@ export const skillGroups = [
       new Skill({ name: 'MySQL',                 level: 75, highlight: false, category: 'database' }),
       new Skill({ name: 'SQL Server',            level: 75, highlight: false, category: 'database' }),
       new Skill({ name: 'Supabase Realtime',     level: 78, highlight: false, category: 'database' }),
-      new Skill({ name: 'R2DBC',                 level: 68, highlight: false, category: 'database' }),
-      new Skill({ name: 'AWS S3',                level: 68, highlight: false, category: 'database' }),
     ],
   }),
   new SkillGroup({
@@ -114,10 +100,6 @@ export const skillGroups = [
       new Skill({ name: 'Figma',            level: 80, highlight: false, category: 'devops' }),
       new Skill({ name: 'Unity (2D & 3D)', level: 72, highlight: false, category: 'devops' }),
       new Skill({ name: 'OBS / FFmpeg',     level: 70, highlight: false, category: 'devops' }),
-      new Skill({ name: 'GitLab CI/CD',     level: 78, highlight: false, category: 'devops' }),
-      new Skill({ name: 'Fastlane',         level: 75, highlight: false, category: 'devops' }),
-      new Skill({ name: 'SonarQube',        level: 70, highlight: false, category: 'devops' }),
-      new Skill({ name: 'DataGrip',         level: 75, highlight: false, category: 'devops' }),
       new Skill({ name: 'Inglés C1',        level: 85, highlight: true,  category: 'devops' }),
     ],
   }),
@@ -135,26 +117,6 @@ export const keySkills = [
 
 // ─── Work Experience ─────────────────────────────────────────────────────────
 export const experience = [
-  new Experience({
-    company:        'InClub',
-    role:           'Desarrollador Full Stack',
-    from:           null,
-    to:             null,
-    current:        false,
-    type:           'work',
-    employmentType: 'Full Stack',
-    location:       'Perú',
-    description:    'Desarrollo y mantengo la app móvil de socios de InClub en Flutter, publicada en Google Play y distribuida en iOS, y participo en los microservicios Java (Spring Boot) y las plataformas web Angular del ecosistema.',
-    responsibilities: [
-      'Validación de identidad completa (KYC): OCR del documento, verificación facial y firma digital del contrato en pantalla',
-      'Verificación por SMS con respaldo por WhatsApp y selector de país para socios extranjeros',
-      'Pipelines CI/CD en GitLab CI y Xcode Cloud: builds firmados por ambiente, despliegue automático en develop y main, Fastlane y Shorebird; monitoreo con Sentry',
-      'Control de calidad automático en cada merge request: formato, análisis estático y tests',
-      'Panel Administrativo móvil llevado a publicación real en Android e iOS (TestFlight)',
-      'Microservicio Java (Spring Boot WebFlux, arquitectura hexagonal): endpoint de versión mínima, migración SQL en PostgreSQL y R2DBC reactivo, con 100% de cobertura de pruebas y SonarQube',
-    ],
-    tech: ['Flutter', 'Cubit', 'Clean Architecture', 'Java', 'Spring Boot', 'Angular', 'GitLab CI', 'Shorebird', 'Sentry'],
-  }),
   new Experience({
     company:        'CP-Techs',
     role:           'Full Stack Developer & Fundador',
@@ -190,14 +152,8 @@ export const experience = [
       '9 endpoints HTTP para gestión de clientes: aprobación, reasignación masiva y línea de crédito',
       'Módulo de pedidos: 3 métodos de pago (YAPE, PLIN, transferencia) + notificaciones a 4 roles',
       'Sistema XulsPoints + correcciones en monorepo Flutter (Melos, packages core/data/ui)',
-      'Plataforma multiempresa: carrito con productos de varias empresas, pedidos y pagos separados con control de acceso',
-      'Integración con ERPs externos: conexión segura por empresa, contratos tipados desde OpenAPI y manejo de caídas',
-      'Esquemas de API generados desde Swagger/OpenAPI con validación en dos capas (app y servidor)',
-      'Feedback in-app que crea tickets automáticos en Jira, con capturas, video y límite de envíos',
-      'Rol de Marketing (banners y beneficios) y perfiles de Cliente Especial y Premium',
-      'Importación/exportación desde Excel y CSV y sincronización automática de stock entre empresas',
     ],
-    tech: ['Cloud Functions', 'TypeScript', 'Firebase Admin', 'Zod', 'Flutter', 'Melos Monorepo', 'OpenAPI', 'ERP API', 'Jira API'],
+    tech: ['Cloud Functions', 'TypeScript', 'Firebase Admin', 'Zod', 'Flutter', 'Melos Monorepo'],
   }),
   new Experience({
     company:        'FerreBoom',
@@ -291,15 +247,6 @@ export const projects = [
     status:      'production',
     type:        'mobile',
     repoUrl:     'https://github.com/BillyArroyo',
-  }),
-  new Project({
-    id:          'inclub-app',
-    title:       'InClub — App de Socios & Panel Admin',
-    description: 'App de socios en producción con validación de identidad completa (OCR, verificación facial y firma digital de contrato), verificación con respaldo por WhatsApp y publicación automatizada en Android e iOS con actualizaciones instantáneas.',
-    tech:        ['Flutter', 'Cubit', 'Clean Architecture', 'Java', 'Spring Boot', 'Shorebird', 'Sentry', 'Fastlane'],
-    featured:    false,
-    status:      'production',
-    type:        'mobile',
   }),
   new Project({
     id:          'la-ribera-hub',
